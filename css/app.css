@@ -1,0 +1,78 @@
+@charset "UTF-8";
+body.elements {
+  font-family: "Arial Narrow", Arial;
+  font-size: 1rem;
+}
+
+.product-vodka {
+  background: #76b0ea;
+  color: #76b0ea;
+}
+
+.product-gin {
+  background: #7bcc77;
+  color: #7bcc77;
+}
+
+.product-tequila {
+  background: #ffe54e;
+  color: #ffe54e;
+}
+
+.product-rum {
+  background: #ffb7ac;
+  color: #ffb7ac;
+}
+
+.product-whiskey {
+  background: #ff883c;
+  color: #ff883c;
+}
+
+.product-brandy {
+  background: #d64f54;
+  color: #d64f54;
+}
+
+.product-desc  {
+  color: #333333;
+}
+
+.bartender {
+  border: 2px solid #333;
+  border-radius: 4px;
+  height: 600px;
+
+}
+
+
+.element-links {
+   padding: 6px 0;
+}
+
+.periodic-element {
+  display: inline-block;
+  height: 96px;
+  width: 96px;
+  border: 2px solid black;
+  margin: 6px;
+  text-align: center;
+  background: #FFFFFF;
+  color: #000;
+  
+}
+
+.periodic-element>.abbr {
+  font-family: "Arial Black", Arial;
+  font-size: 2.6rem;
+  padding: .6rem 0 0;
+}
+
+.periodic-element>.title {
+  font-family: "Arial Narrow", Arial;
+  font-size: .85rem;
+  margin: -.3rem .2rem 0;
+  white-space:nowrap;
+  overflow:hidden;
+  
+}
