@@ -1,48 +1,244 @@
 @charset "UTF-8";
-body.elements {
-  font-family: "Arial Narrow", Arial;
-  font-size: 1rem;
+
+.product-vodka-bg {
+  background: #76b0ea;
 }
 
-.product-vodka {
-  background: #76b0ea;
+.product-vodka-color {
   color: #76b0ea;
 }
 
-.product-gin {
+.product-gin-bg {
   background: #7bcc77;
+}
+
+.product-gin-color {
   color: #7bcc77;
 }
 
-.product-tequila {
-  background: #ffe54e;
+.product-tequila-bg {
+  background: #ffe54e;  
+}
+
+.product-tequila-color {
   color: #ffe54e;
 }
 
-.product-rum {
+.product-rum-bg{
   background: #ffb7ac;
+}
+
+.product-rum-color {
   color: #ffb7ac;
 }
 
-.product-whiskey {
+.product-whiskey-bg {
   background: #ff883c;
+}
+
+.product-whiskey-color {
   color: #ff883c;
 }
 
-.product-brandy {
+.product-brandy-bg {
   background: #d64f54;
+}
+
+.product-brandy-color {
   color: #d64f54;
 }
 
-.product-desc  {
-  color: #333333;
+body.elements {
+  font-family: "Arial Narrow", Arial;
+  font-size: 1rem;
+  padding: 100px 0 0;
 }
 
-.bartender {
-  border: 2px solid #333;
-  border-radius: 4px;
-  height: 600px;
+h1, h2, h3 {
+  font-family: "Arial Narrow", Arial;
+  font-weight: bold;
+  color: #eee;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000;
+  margin:0;
+  padding: 0;
+}
 
+.page-header {
+  height: 100px;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, .8);
+  color: #EEE;
+  z-index: 1000;
+}
+
+#elementsLogo {
+	width: 240px;
+}
+
+.app-links {
+  display:inline-block;
+  height: 100px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.app-links > li {
+  display:inline-block;
+  height: 100px;
+  width: 100px;
+  padding: 10px 0;
+  text-align: center;
+
+}
+
+.app-link-icon {
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* home Page */
+
+body.home {
+  background: url(../img/indexBackground_1440x720.jpg) right 0 no-repeat #000;
+  background-attachment:fixed;
+  background-size: cover;
+  padding:0;
+}
+
+.screened #screen {
+  top:0;
+}
+
+#screen {
+  position:fixed;
+  top: 100vh;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0, .3);
+  z-index: 1100;
+  transition: all 500ms;
+}
+
+.full-modal {
+   position: fixed;
+   top: 100px;
+   height: calc(100vh - 150px);
+   width: 40vw;
+   left: 30vw;
+   z-index: 1200;
+   opacity:0;
+  
+}
+
+.screened .full-modal {
+  opacity:1;
+}
+
+
+.full-modal h3 {
+  text-shadow:none;
+  letter-spacing: 1px;
+}
+#ageModal {
+  background: rgba(0,0,0,.3 );
+  box-shadow: 0px 0px 15px #000;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+}
+
+.ageInputs {
+  width: 80%;
+  border:0;
+  background: #eee;
+  color: #333;
+  font-family:"Arial Narrow", Arial;
+  font-size: 2rem;
+  margin: 0 auto;
+  border-radius: 4px;
+  opacity: .8;
+
+}
+
+input.ageInput {
+  border:0;
+  background:#eee;
+  color: #333;
+  font-family:"Arial Narrow", Arial;
+  font-size: 2rem;
+  width: 8vw;
+  text-align:center;
+}
+
+
+#ageModal footer {
+  position: absolute;
+  left:0;
+  bottom:0;
+  width: 100%;  
+  height:100px;
+  padding: 0 20px;
+  line-height: 100px;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  font-weight:bold;
+  text-align:left;
+  
+}
+
+
+.submit {
+  border:0;
+}
+
+.enter {
+  font: "Arial Narrow", Arial;
+  font-size: 2rem;
+  background: #333;
+  border-radius: 4px;
+}
+
+
+
+/* Product Page */
+
+.product .product-info {
+  min-height: 80vh;
+}
+
+.product h2 {
+  font-size: 5rem;
+}
+
+.product h3 {
+  font-size: 2.5rem;
+}
+
+.product h1 {
+  font-size: 8rem;
+}
+
+.product .product-desc {
+  font-size: 1.4rem;
+  font-family: "Arial Narrow";
+  background: rgba(0,0,0,.4);
+  padding: 12px;
+  text-shadow: none;
+}
+
+.product .product-cocktails, 
+.product .product-blog {
+  margin-bottom: 3rem;
+  padding: 1rem 0 3rem;
 }
 
 
@@ -51,15 +247,14 @@ body.elements {
 }
 
 .periodic-element {
-  display: inline-block;
+  display: block;
+  float:left;
   height: 96px;
   width: 96px;
-  border: 2px solid black;
-  margin: 6px;
+  border: 2px solid #000;
+  margin: 2px;
   text-align: center;
-  background: #FFFFFF;
   color: #000;
-  
 }
 
 .periodic-element>.abbr {
@@ -72,7 +267,193 @@ body.elements {
   font-family: "Arial Narrow", Arial;
   font-size: .85rem;
   margin: -.3rem .2rem 0;
-  white-space:nowrap;
-  overflow:hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  
+}
+
+.element-links .periodic-element {
+    background: #FFFFFF;
+}
+
+.product-nav {
+  background: currentcolor;
+  height: 10vh;
+  padding-top: 5vh;
+  line-height: 1vh;
+  text-align: center;
+  
+}
+
+
+.bartender {
+  margin-bottom: 3rem;
+}
+
+.bartender .blog-header {
+  height: 4rem;
+  padding: .5rem 1rem;
+  border-radius: 8px 8px 0 0;
+  color: #000;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.bartender .blog-post {
+  background: rgba(0,0,0,.8);
+  border: 2px solid currentcolor;
+  font-size: 1.2rem;
+  height: 450px;
+  overflow: auto;
+  padding-bottom: 64px;
+}
+
+.bartender .blog-post p {
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
+  margin: 0;
+}
+
+.bartender .blog-footer {
+  height: 50px;
+  border-radius: 0 0 8px 8px;
+  color: #000;
+  padding: .5rem 1rem;
+}
+
+.bartender .blog-footer .profile {
+  float: left;
+}
+
+.bartender .profile-image {
+    float: right;
+    position: relative;
+    margin: -108px 10px 0;
+    border: 3px solid currentcolor;
+    border-radius: 8px;
+}
+
+body.product-gin {
+  background: url(../img/gimletBackgroundWeb_1440x720.jpg) 0 100px no-repeat #000;
+  background-attachment:fixed;
+  background-size: cover;
+}
+
+.product-gin .bartender .blog-footer {
+  border: 2px solid #7bcc77;
+}
+
+.product-gin .bartender .blog-header {
+  background: #7bcc77;
+  border: 2px solid #7bcc77;
+}  
+
+.product-gin .products-link {
+  color: #7bcc77;
+}
+
+/* Periodic Elements */
+
+body.cocktails {
+  background: url(../img/flashBackground_1440x720.jpg) right 0 no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+
+.cocktails h1 {
+  font-size: 4.5rem;
+}
+
+.cocktails h2 {
+  font-size: 3rem;
+  float: left;
+  padding: 0 1rem;
+}
+
+.cocktails .cocktails-link {
+  color: #0ff;
+}
+
+
+.periodic-table .periodic-element {
+  margin: -1px -1px 0 0;
+  height: 56px;
+  width: 56px;
+  border: 1px solid #000;
+}
+
+.periodic-table .periodic-element>.abbr {
+  font-size: 1.6rem;
+  padding: .3rem 0 0;
+}
+
+.periodic-table .periodic-element>.title {
+  font-size: 0.3rem;
+  margin: -.2rem 0 0;
+}
+
+.rfiller2 {
+  margin-right: 108px !important;
+}
+
+.rfiller1 {
+  margin-right: 54px !important;
+}
+
+.filler3 {
+  width: 165px;
+  height: 55px;
+}
+
+.lfiller2 {
+  margin-left: 110px !important;
+}
+
+.lfiller1 {
+  margin-left: 55px !important;
+}
+
+
+.periodic-table .product-gin .periodic-element {
+  background: #7bcc77;
+}
+
+.periodic-table .product-vodka .periodic-element {
+  background: #76b0ea;
+}
+
+.periodic-table .product-tequila .periodic-element {
+  background: #ffe54e;
+}
+
+.periodic-table .product-rum .periodic-element {
+  background: #ffb7ac;
+}
+
+.periodic-table .product-whiskey .periodic-element {
+  background: #ff883c;
+}
+
+.periodic-table .product-brandy .periodic-element {
+  background: #d64f54;
+}
+
+.cocktails h2.columns {
+  text-align: right;
+}
+
+.product-cocktails-keys .periodic-element {
+  line-height: 76px;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  
+  margin: -2px -2px 0 0;
+  height: 76px;
+  width: 76px;
+  border: 2px solid #000;
+
   
 }
